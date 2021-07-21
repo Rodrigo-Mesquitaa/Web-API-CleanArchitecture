@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Interfaces\Repositorios\**" />
+    <Compile Remove="Interfaces\Servico\**" />
+    <EmbeddedResource Remove="Interfaces\Repositorios\**" />
+    <EmbeddedResource Remove="Interfaces\Servico\**" />
+    <None Remove="Interfaces\Repositorios\**" />
+    <None Remove="Interfaces\Servico\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Enums\" />
+  </ItemGroup>
+
+</Project>
